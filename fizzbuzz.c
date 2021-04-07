@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: MIT
+/* SPDX-License-Identifier: WTFPL
  * Copyright (c) 2021 Chua Hou */
 
             i,t,f,j;
