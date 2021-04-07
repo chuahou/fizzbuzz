@@ -1,2 +1,8 @@
-$(out)/fizzbuzz: fizzbuzz.c
-	$(CC) $< -o $@ -std=c89
+PREFIX ?= /usr/local
+
+fizzbuzz: fizzbuzz.c
+	$(CC) -std=c89 $< -o $@
+
+install: fizzbuzz
+	install -d $(DESTDIR)$(PREFIX)/bin
+	install -t $(DESTDIR)$(PREFIX)/bin $^
